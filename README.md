@@ -20,3 +20,16 @@ Optimize-VHD -Path Y:\dockerData\ext4.vhdx -Mode Full
 php artisan make:controller UserController3
 создал здесь:
 app/Http/Controllers/UserController.php
+
+
+php artisan -h migrate
+// выполняемые контейнеры
+docker ps
+
+// войти внутрь контейнера
+docker exec -it admin_api sh
+php artisan migrate
+
+php artisan -h make:seeder
+
+php artisan make:seeder UserSeeder
